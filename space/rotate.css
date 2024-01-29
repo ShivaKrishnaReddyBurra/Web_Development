@@ -1,0 +1,151 @@
+body{
+    background-color: #000;
+}
+
+#sun{
+    background-image: url("./images/sun.jpeg");
+    background-size: cover;
+    background-position: -8px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: rotate 5s linear infinite;
+   
+}
+#mercury{
+    background-image: url("./images/mercury.jpeg");
+    background-size: cover;
+    background-position: 12px;    
+    height: 10px;
+    width: 10px;
+   
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+
+    margin-top: -50px;
+    margin-left: -50px; 
+    animation: rotate 5s linear infinite;
+    
+}
+    
+#venus{
+    background-image: url("./images/venus.jpeg");
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+  
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 90px;
+    margin-left: 25px; 
+    animation: rotate 5s linear infinite;
+    
+    
+}
+
+#earth{
+    background-image: url("./images/earth.jpeg");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+   
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    animation: rotate 5s linear infinite;
+    
+}
+#mars{
+    background-image: url("./images/mars.jpeg");
+    background-size: cover;
+    background-position:  -10PX ;
+    height: 30px;
+    width: 30px;
+ 
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: 140px;
+    margin-left: -100px; 
+    animation: rotate 5s linear infinite;
+}
+#moon{
+    background-image: url("./images/moon.jpeg");
+    background-size: cover;
+    
+    height: 20px;
+    width: 20px;
+
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    animation: rotate 5s linear infinite;
+
+   
+}
+#jupiter{
+    background-image: url("./images/jupiter.jpeg");
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -40px; 
+    animation: rotate 5s linear infinite;
+}
+#saturn{
+   background-image: url("./images/saturn.jpeg");
+    background-size: cover;
+
+    height: 50px;
+    width: 50px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px; 
+    animation: rotate 5s linear infinite;
+}
+#uranus{
+    background-image: url("./images/uranus.jpeg");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -250px; 
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
