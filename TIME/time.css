@@ -25,6 +25,34 @@ body{
     left: 60%;
     margin-left: -60px;
 }
+.ampm{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    margin-left: 5px;
+
+}
+#d{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    margin-left: 30px;
+
+}
+#mo{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    margin-left: 30px;
+
+}
+#y{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    margin-left: 30px;
+
+}
 label{
     font-size: 100px;
     color: azure;
@@ -40,4 +68,38 @@ label{
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     box-shadow: 0 0 10px #1CB5E0;
     transition: all 1s ease;
+}
+.year{
+    width:260px;
+    height: 125px;
+}
+#ampm{
+    width:150px;
+}
+#N{
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    margin-left: -10px;
+    font-size: 5REM;
+    color: #FFF;
+    text-shadow: 0 0 10px #14a0c0;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 10px #1CB5E0;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    
+}
+#T{
+    position: absolute;
+    top: 42%;
+    left: 20%;
+    margin-left: -10px;
+    font-size: 5REM;
+    color: #FFF;
+    text-shadow: 0 0 10px #14a0c0;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 0 0 10px #1CB5E0;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 }

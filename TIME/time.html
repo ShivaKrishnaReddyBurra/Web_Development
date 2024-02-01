@@ -3,12 +3,18 @@
         <title>TIME</title>
         <link rel="stylesheet" href="time.css">
     </head>
-    <body onload="time();setInterval(time(),1000)">
+    <body onload="time()">
+        <b ID="N">DATE</b>
+        <b ID="T">TIME</b>
         <div class="time">
             <div class="hours"><label id=h></label></div>
             <div class="minutes"><label id=m></label></div>
             <div class="seconds"><label id=s></label></div>
+            <div class="ampm"><label id="ampm"></label></div>
         </div>
+        <label id="d"></label>
+        <label id="mo"></label>
+        <label id="y" class="year"></label>
         <script src="time.js"></script>
     </body>
 </html>
