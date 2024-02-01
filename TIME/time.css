@@ -1,0 +1,43 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+.hours{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -200px;
+}
+.minutes{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    margin-left: -130px;
+}
+.seconds{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    margin-left: -60px;
+}
+label{
+    font-size: 100px;
+    color: azure;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 10px #1CB5E0;
+    text-align: center;
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 100px;
+    border-radius: 20%;                     
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    box-shadow: 0 0 10px #1CB5E0;
+    transition: all 1s ease;
+}
