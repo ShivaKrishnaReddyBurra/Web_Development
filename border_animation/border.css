@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.blur-border{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(50px);
+}
+.box{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.blur-border::before,
+.blur-border::after{
+    border-radius: 50%;
+    height: 400px !important;
+    width: 500px !important;
+}
+.box::after,
+.blur-border::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(red,transparent,transparent,rgb(38, 188, 38));
+    animation: a 5s linear infinite;
+    animation-delay: -2s;
+
+}
+.box::before,
+.blur-border::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(green,transparent,transparent,blue);
+    animation: a 5s linear infinite;
+}
+@keyframes a{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 20px;
+    background-color:black ;
+    z-index: 1;
+}
+.box h1{
+    z-index: 2;
+    color: white;
+    font-size: 5rem;
+}
