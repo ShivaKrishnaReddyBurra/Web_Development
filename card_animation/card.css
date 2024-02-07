@@ -32,18 +32,32 @@ body{
     align-items: flex-end;
     transition: .5s cubic-bezier(0.25,-0.03, 0, .99);
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.8);
+    animation: a 2s infinite;
 }
-@keyframes ab {
-    100%{
-        filter: hue-rotate(360deg);
+
+@keyframes a {
+    0%{
+        border: 1px solid red;
+        box-shadow: 0 10px 30px -5px red;
     }
+    50%{
+        border: 2px solid blue;
+        box-shadow: 0 10px 30px -5px blue;
+    }
+    100%{
+        border: 2px solid green;
+        box-shadow: 0 10px 30px -5px green;
+    }
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .card > .row{
     color: white;
     display: flex;
     flex-wrap: nowrap;
 }
-.card > .row > .icon{
+.icon{
     background: #223;
     color: white;
     border-radius: 50%;
@@ -75,6 +89,9 @@ input:checked + label{
 input:checked + label .text{
     opacity: 1 !important;
     transform: translateY(0) !important;
+}
+input:checked + label .icon{
+    background: hotpink;
 }
 .card[for="c1"]{
     background-image: url('./images/naruto.jpg');
