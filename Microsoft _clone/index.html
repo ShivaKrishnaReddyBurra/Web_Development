@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="head">  
+    
     <div class="nav">
         <div class="icon">
             <a href="index.html" class="micro_logo"><img src="./images/logo.png" alt="Microsoft Logo"></a>
@@ -25,22 +25,60 @@
         </div>
         <div class="Search">
             <ul>
-                <li>All Microsoft</li>
-                <li>Search
+                <select name="op" id="dowm">
+                    <option value="All Microsoft">All Microsoft</option>
+                    <option value="Microsoft 365">Microsoft 365</option>
+                    <option value="Teams">Teams</option>
+                    <option value="Copilot">Copilot</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Surface">Surface</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Support">Support</option>
+                </select>
+                
+                <li><button class="search">Search</button>
                 <span class="icon"><ion-icon name="search-sharp"></ion-icon></span>
                 </li>
                 <li>
-                    Cart
+                    <a href="#">Cart</a>
                     <span class="icon"><ion-icon name="cart-outline"></ion-icon> </span>
                 </li>
-                <li>Sign in</li>
+                <li><a href="#">Sign in</a></li>
             </ul>
         </div>
     </div>
-  </section>  
+    
   <div class="cards">
-
-  </div>
+    <img src="./images/ad_img.avif">
+    <h1>Surface Pro 9</h1>
+    <p>Tablet versatility and laptop power — all in one ultra-portable device</p>
+    <button class="learn">Learn more</button>
+</div>
+<div class="slide_btn">
+   <span class="icon"><ion-icon name="pause-circle-outline"></ion-icon></span>
+   <span class="icon"><ion-icon name="chevron-back-outline"></ion-icon></span>
+   <span class="icon"><ion-icon name="radio-button-on-outline"></ion-icon></span>
+   <span class="icon"><ion-icon name="radio-button-off-outline"></ion-icon></span>
+   <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+</div>
+<div class="con_logo">
+    <div class="m_365">
+        <ion-icon name="logo-microsoft" size="large" id="m365"></ion-icon>
+        <a href="#">Choose your Microsoft 365</a>
+    </div>
+    <div class="x-box">
+        <ion-icon name="logo-xbox" size="large" id="xbox"></ion-icon>
+        <a href="#">Shop Xbox games and consoles</a>
+    </div>
+    <div class="windows-11">
+        <ion-icon name="logo-microsoft" size="large" id="m365"></ion-icon>
+        <a href="#">Get Windows 11</a>
+    </div>
+    <div class="surface">
+        <ion-icon name="phone-landscape-outline" size="large" id="sur"></ion-icon>
+        <a href="#">Shop Surface devices</a>
+    </div>
+</div>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 </body>

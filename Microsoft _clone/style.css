@@ -5,7 +5,8 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    
+    
 }
 .nav{
     position: absolute;
@@ -59,4 +60,85 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+.search{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search:hover{
+    text-decoration: underline;
+}
+.cards{
+    position: relative;
+    background-color: #f2f2f2;
+    height: 450px;
+    width: 100%;
+    top:45px;
+    cursor: pointer;
+}
+.cards img{
+   height:450px;
+    width:100%;
+}
+.cards h1{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    
+}
+.cards p{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+.cards .learn{
+    height:40px;
+    width: 110px;
+    background-color:#0067b8;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    border: none;
+    cursor: pointer;
+}
+.slide_btn{
+    position: relative;
+    top:55px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.con_logo{
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.con_logo a{
+    display:grid;
+    grid-template-columns: 250px;
+    align-items: flex-end;
+    text-align: center;
+    color: blue;
+}
+#m365{
+  position: relative;
+    left:42%;
+   
+}
+#xbox{
+    position: relative;
+    left: 42%;
+}
+#sur{
+    position: relative;
+    left: 42%;
 }
