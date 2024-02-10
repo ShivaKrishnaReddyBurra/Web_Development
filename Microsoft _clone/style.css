@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    
 }
 .nav{
     position: absolute;
@@ -196,5 +197,135 @@ a:hover{
 .xbox_ad .x_series{
     position: absolute;
     top:70%;
-    margin-left: -840px;
+    margin-left: -1030px;
+    border-radius: 2px;
+    height: 40px;
+    width: 150px;
+    background-color: #0067b8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14.2px;
 }
+#business{
+    position: relative;
+    top: 400px;
+    display: flex;
+    left:70px;
+}
+.b_ad{
+    height: 500px;
+    position: relative;
+    top: 430px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+.b_ad img{
+    height: 185px;
+}
+.b_ad div{
+    height: 250px;
+    width: 320px;
+}
+.b_ad a{
+    position: relative;
+    color: blue;
+    top:25px;
+}
+.b_ad h1{
+    font-size: 24.5px;
+}
+.follow{
+    position: relative;
+    top: 400px;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    flex-wrap: nowrap;
+    margin-left:70px;
+}
+.follow p{
+    position: relative;
+    font-size: 18px;
+    top:4px;
+}
+.footer{
+    position: relative;
+    margin-top:500px;
+    display: flex;
+    background: #f2f2f2;
+    height: 400px;
+}
+.foot{
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-left: 5%;
+    top:10%;
+    gap: 3rem;
+    
+}
+.foot ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    top: 40px;
+    margin-left: -80px;
+    font-size: 11px;
+}
+#one{
+    position: relative;
+    left: 48px;
+}
+#two{
+    position: relative;
+    left: 75px;
+}
+#three{
+    position: relative;
+    left: 38px;
+}
+#four{
+    position: relative;
+    left: 28px;
+}
+#five{
+    position: relative;
+    left: 73px;
+}
+#six{
+    position: relative;
+    left: 33px;
+}
+.foot2{
+    position: relative;
+    top: 90%;
+    margin-left: -80%;
+    display: flex;
+    font-size: 10px;
+    gap: 1rem;
+}
+.foot2 .globe{
+    display: flex;
+    gap: 10px;
+}
+.foot2 img{
+    height: 20px;
+    width: 30px;
+}
+.foot2 .Privacy{
+    display: flex;
+    gap: 10px;
+}
+.foot2 .end{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    left: 70%;
+}
+
