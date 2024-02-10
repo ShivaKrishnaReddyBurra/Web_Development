@@ -173,3 +173,28 @@ a:hover{
     top:60px;
     left: -128px;
 }
+.xbox_ad{
+    position: relative;
+    top:350px;
+    display: flex;
+    justify-content: center;
+}
+.xbox_ad img{
+    width: 1400px;
+    height: 500px;
+}
+.xbox_ad h1{
+    position: absolute;
+    top:50%;
+    margin-left: -980px;
+}
+.xbox_ad p{
+    position: absolute;
+    top:60%;
+    margin-left: -840px;
+}
+.xbox_ad .x_series{
+    position: absolute;
+    top:70%;
+    margin-left: -840px;
+}
