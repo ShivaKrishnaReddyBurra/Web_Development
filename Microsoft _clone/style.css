@@ -113,6 +113,70 @@ a:hover{
     border: none;
     cursor: pointer;
 }
+.cards2{
+    position: relative;
+    background-color: #f2f2f2;
+    height: 450px;
+    width: 100%;
+    top:55px;
+    cursor: pointer;
+
+}
+.cards2 img{
+   height:450px;
+    width:100%;
+}
+.cards2 h1{
+    position: absolute;
+    top: 38%;
+    left: 8%;
+}
+.cards2 p{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    width: 450px;
+}
+
+.cards2 #n1{
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    background: rgb(245, 169, 76);
+    height: 28px;
+    width:55px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2px;
+}
+.cards2 .forind{
+    position: absolute;
+    top: 65%;
+    left: 8%;
+    background: #0067b8;
+    height: 40px;
+    width: 130px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+
+}
+.cards2 #n2{
+    position: absolute;
+    top:67%;
+    left: 18%;
+    color: #0067b8;
+    font-size: 1rem;
+    font-weight: 600;
+    
+
+}
 .slide_btn{
     position: relative;
     top:55px;
