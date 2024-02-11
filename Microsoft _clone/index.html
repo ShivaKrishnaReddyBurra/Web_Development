@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <div class="nav">
+    <div class="nav" id="dis1">
         <div class="icon">
             <a href="index.html" class="micro_logo"><img src="./images/logo.png" alt="Microsoft Logo"></a>
         </div>
@@ -23,7 +23,7 @@
                 <li><a href="#">Support</a></li>
             </ul>
         </div>
-        <div class="Search">
+        <div class="Search" >
             <ul>
                 <select name="op" id="dowm">
                     <option value="All Microsoft">All Microsoft</option>
@@ -36,12 +36,12 @@
                     <option value="Support">Support</option>
                 </select>
                 
-                <li><button class="search">Search</button>
+                <li><input type="button"  id="ser" value="Search ">
                 <span class="icon"><ion-icon name="search-sharp"></ion-icon></span>
                 </li>
                 <li>
                     <a href="#">Cart</a>
-                    <span class="icon"><ion-icon name="cart-outline"></ion-icon> </span>
+                    <span class="icon" id="s1"><ion-icon name="cart-outline"></ion-icon> </span>
                 </li>
                 <li><a href="#">Sign in</a></li>
             </ul>
@@ -228,6 +228,7 @@
         </div>
     </div>
 </section> 
+<script src="index.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 </body>

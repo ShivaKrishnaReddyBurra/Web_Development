@@ -69,6 +69,14 @@ a:hover{
 .search:hover{
     text-decoration: underline;
 }
+#ser{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+#ser:hover{
+    text-decoration: underline;
+}
 .cards{
     position: relative;
     background-color: #f2f2f2;
