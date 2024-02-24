@@ -10,10 +10,12 @@ html,body{
     min-height: 100vh;
     overflow-x: hidden;
     background: black;
+    color: white;
 }
 nav{
+   
     display: flex;
-    height: 65px;
+    height: 80px;
     width: 100%;
     background: #ca4747;
 }
@@ -22,14 +24,14 @@ nav .logo{
     justify-content: center;
     align-items: center;
     width: 40%;
+    user-select: none;
 }
 nav .logo img{
     width: 50px;
     height: 50px;
     margin: 10px;
-    border-radius: 50%;
+    clip-path: circle(50%);
     background-size: cover;
-    box-shadow: black 0px 0px 20px;
     cursor: pointer;
 }
 nav .logo h1{
@@ -44,6 +46,7 @@ nav ul{
     width: 60%;
     display: flex;
     justify-content: space-around;
+    user-select: none;
 }
 
 nav .navlist{
@@ -85,6 +88,56 @@ nav .sidebar{
     padding-top:20px ;
     background-color: #f4f4f4;
 }
+.sec-1{
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    gap: 40px;
+    user-select: none;
+    padding: 20px;
+    animation: textanim 5s ease;
+    animation-delay: 0.5s;
+
+}
+.sec-1 img{
+    border-radius: 200px 5px 200px 5px;
+    filter: drop-shadow(0 0 15px  #ca4747);
+    animation:textanim 3.5s ease;
+    animation-delay: .5s;
+}
+.sec-1 .text h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-shadow: #ca4747 0px 0px 10px;
+    animation:textanim 3.5s ease;
+    animation-delay: .5s;
+}
+.sec-1 .text p{
+    font-size: 25px;
+    font-weight: 520;
+    margin-top: 40px;
+    width: 90%;
+    box-shadow: #4b45c9 0px 0px 10px;
+    padding: 20px;
+    animation: textanim 3.5s ease;
+    animation-delay: .5s;
+}
+@keyframes textanim{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.sec-2{
+    margin-top: 55px;
+    user-select: none;
+}
+
 @media (max-width: 768px){
     nav .navlist{
         display: none;
@@ -97,12 +150,53 @@ nav .sidebar{
     nav .logo{
         width: 80%;
     }
+    nav .logo img{
+        width: 50px;
+        height: 50px;
+        clip-path: circle(50%);
+    }
     nav ul{
         width: 20%;
     }
     nav .sidebar{
         width: 100%;
         background-color: #ca4747;
+        z-index: 1;
     }
 
+}
+@media (max-width: 430px){
+    .sec-1{
+        flex-direction: column;
+        margin-left:10px ;
+        padding: 10px;
+    }
+    .sec-1 .img1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .sec-1 img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .sec-1 .text{
+        width: 100%;
+    }
+    .sec-1 .text h1{
+        margin-top: 10px;
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+    }
+    .sec-1 .text p{
+        margin-top: 20px;
+        font-size: 17px;
+        text-align: start;
+        width: 95%;
+        margin-left: 10px;
+        padding: 10px;
+    }
 }
