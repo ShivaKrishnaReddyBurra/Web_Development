@@ -136,8 +136,81 @@ nav .sidebar{
 .sec-2{
     margin-top: 55px;
     user-select: none;
+    padding: 20px;
+}
+.sec-2 h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: #4b45c9 0px 0px 20px;
+    animation: textanim 5s ease;
 }
 
+.sec-2  h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.sec-2  p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+.sec-2 .Q1{
+    box-shadow: #ca4747 0px 0px 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 60px;
+    animation: Qanim 8s ease;
+}
+.sec-2 .Q2{
+    box-shadow: #4b45c9 0px 0px 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 60px;
+    animation: Qanim 12s ease;
+
+}
+.sec-2 .Q3{
+    box-shadow: #33cf45 0px 0px 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 60px;
+    animation: Qanim 16s ease;
+}
+.sec-2 .Q1 h2,.sec-2 .Q1 p{
+    animation: Qanim 10s ease;
+}
+.sec-2 .Q2 h2,.sec-2 .Q2 p{
+    animation: Qanim 14s ease;
+}
+.sec-2 .Q3 h2,.sec-2 .Q3 p{
+    animation: Qanim 18s ease;
+}
+@keyframes Qanim{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 @media (max-width: 768px){
     nav .navlist{
         display: none;
@@ -162,6 +235,17 @@ nav .sidebar{
         width: 100%;
         background-color: #ca4747;
         z-index: 1;
+    }
+    .sec-1{
+        flex-direction: column;
+        margin-left:10px ;
+        padding: 10px;
+    }
+    .sec-1 .img1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
 }
@@ -199,4 +283,25 @@ nav .sidebar{
         margin-left: 10px;
         padding: 10px;
     }
+    .sec-2 h1{
+        font-size: 40px;
+    }
+    .sec-2 h2{
+        font-size: 20px;
+    }
+    .sec-2 p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 320px){
+    .sec-2 h1{
+        font-size: 30px;
+    }
+    .sec-2 h2{
+        font-size: 15px;
+    }
+    .sec-2 p{
+        font-size: 10px;
+    }
+    
 }
